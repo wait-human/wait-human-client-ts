@@ -1,0 +1,31 @@
+{
+    "name": "@wait-human/client",
+    "version": "0.0.1",
+    "description": "Library to utise WaitHuman's services",
+    "homepage": "https://waithuman.com/",
+    "bugs": {
+        "url": "https://github.com/wait-human/wait-human-client-ts/issues"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wait-human/wait-human-client-ts.git"
+    },
+    "license": "ISC",
+    "author": "Giovanni",
+    "type": "commonjs",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepare": "npm run build"
+    },
+    "devDependencies": {
+        "typescript": "^5.9.3"
+    }
+}
