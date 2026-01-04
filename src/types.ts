@@ -10,7 +10,7 @@ export type AnswerContent = components["schemas"]["AnswerContent"];
 
 export interface WaitHumanConfig {
     apiKey: string;
-    endpoint: string;
+    endpoint?: string;
 }
 
 export interface WaitHumanError {

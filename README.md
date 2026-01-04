@@ -15,7 +15,6 @@ import { WaitHuman } from "@wait-human/client";
 
 const waitHuman = new WaitHuman({
     apiKey: "YOUR_API_KEY",
-    // endpoint: "https://api.waithuman.com", // Optional, defaults to production
 });
 
 // Example: Multiple Choice Question

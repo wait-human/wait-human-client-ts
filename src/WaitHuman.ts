@@ -7,6 +7,8 @@ import {
     WaitHumanConfig,
 } from "./types";
 
+const DEFAULT_BACKEND_ENDPOINT = "https://api.waithuman.com";
+
 export class WaitHuman {
     private apiKey: string;
     private client: ReturnType<typeof createApiClient>;
@@ -23,7 +25,7 @@ export class WaitHuman {
             throw new Error("apiKey is mandatory");
         }
         this.apiKey = config.apiKey;
-        let endpoint = config.endpoint;
+        let endpoint = config.endpoint ?? DEFAULT_BACKEND_ENDPOINT;
 
         if (endpoint.endsWith("/")) {
             endpoint = endpoint.slice(0, -1);

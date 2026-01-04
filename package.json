@@ -1,6 +1,6 @@
 {
     "name": "@wait-human/client",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Library to utilize WaitHuman's services",
     "homepage": "https://waithuman.com/",
     "bugs": {
